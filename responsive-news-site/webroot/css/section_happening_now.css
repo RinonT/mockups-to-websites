@@ -14,3 +14,34 @@
   border-block-start: 2px solid #EBEDED;
   padding-block-start: 2.5rem;
 }
+
+
+@media (min-width: 768px) {
+  #section_happening_now  {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-areas: "header header"
+                         "article-1 article-1"
+                         "article-2 article-3";
+
+     column-gap: 3rem;
+   }
+
+  #section_happening_now header {
+     grid-area: header;
+   }
+
+  #section_happening_now article:first-of-type {
+     grid-area: article-1;
+   }
+
+  #section_happening_now article:nth-last-of-type(2) {
+     grid-area: article-2;
+   }
+
+   #section_happening_now article:last-of-type {
+    grid-area: article-3;
+  }
+
+ }
+
