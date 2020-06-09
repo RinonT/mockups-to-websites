@@ -46,3 +46,18 @@ nav > ul {
   margin: 0;
   padding: 0;
 }
+
+ @media(min-width: 768px) {
+ 
+/*
+.article_simple .article_image {
+  height: calc((100vw - 3rem) / 2);
+
+}
+
+
+trending .article_swatch .article_image {
+  height: calc(50vw - 3rem);
+}
+} */
+

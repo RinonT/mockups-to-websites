@@ -58,3 +58,48 @@ body > footer a {
   justify-content: space-between;
   max-width: 8.5rem;
 }
+
+@media (min-width: 768px) {
+  .link_primary {
+    display: block;
+  }
+
+
+  footer {
+    display: grid;
+    grid-template-areas: "h2 ul"
+                         "form icons";
+
+    column-gap: 2rem;
+
+  }
+
+  footer h2 {
+    grid-area: h2;
+    margin-inline-start: 3.5rem;
+  }
+
+  footer .links_site {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    grid-area: ul;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-inline-end: 3.5rem;
+  }
+
+  a[href="/about"] {
+    margin-block-start: 0.5rem;
+  }
+  footer .links_social {
+    grid-area: icons;
+    transform: translate(100%, 50%);
+  }
+
+  footer .form_subscribe {
+    margin-block-start: 0;
+    grid-area: form;
+    margin-inline-start: 3.5rem;
+
+  }
+}
