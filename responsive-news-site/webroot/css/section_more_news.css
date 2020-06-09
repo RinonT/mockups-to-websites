@@ -26,14 +26,14 @@
   color: #FA6980;
 }
 
+
 @media (min-width: 768px) {
  #section_more_news  {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "header header"
-                        "article-1 article-2"
                         "article-1 article-2";
-    column-gap: 3rem;
+    column-gap: 2rem;
   }
 
  #section_more_news header {
@@ -44,8 +44,7 @@
     grid-area: article-1;
   }
 
- #section_more_news article:nth-last-of-type(2) {
+ #section_more_news article:nth-of-type(2) {
     grid-area: article-2;
   }
-
 }
