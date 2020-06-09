@@ -16,15 +16,15 @@
 }
 
 
-@media (min-width: 768px) {
-  #section_happening_now  {
-     display: grid;
-     grid-template-columns: repeat(2,1fr);
-     grid-template-areas: "header header"
-                         "article-1 article-1"
-                         "article-2 article-3";
-
-     column-gap: 3rem;
+@media(min-width: 768px) {
+    #section_happening_now  {
+    display: grid;
+    grid-template-areas:
+     "header header"
+     "article-1 article-1"
+     "article-2 article-2"
+     "article-3 article-4";
+    column-gap: 3rem;
    }
 
   #section_happening_now header {
@@ -35,13 +35,18 @@
      grid-area: article-1;
    }
 
-  #section_happening_now article:nth-last-of-type(2) {
+  #section_happening_now article:nth-of-type(2) {
      grid-area: article-2;
    }
 
-   #section_happening_now article:last-of-type {
+   #section_happening_now article:nth-of-type(3) {
     grid-area: article-3;
   }
+  #section_happening_now article:nth-of-type(4) {
+    grid-area: article-4;
+  }
 
- }
-
+  #section_happening_now article:nth-of-type(4) ~ article {
+    display: none;
+  }
+}
