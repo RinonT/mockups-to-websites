@@ -2,7 +2,7 @@
   background-color: #fff;
 }
 
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
   #section_trending  {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -20,11 +20,11 @@
     grid-area: article-1;
   }
 
-  #section_trending article:nth-last-of-type(2) {
+  #section_trending article:nth-of-type(2) {
     grid-area: article-2;
   }
 
-  #section_trending article:last-of-type {
+  #section_trending article:nth-of-type(2) ~ article {
     display: none;
   }
 }
