@@ -25,6 +25,8 @@
      "article-2 article-2"
      "article-3 article-4";
     column-gap: 3rem;
+    margin-inline-start: 3.5em;
+    margin-inline-end: 3.5rem;
    }
 
   #section_happening_now header {

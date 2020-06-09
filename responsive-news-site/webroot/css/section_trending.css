@@ -10,6 +10,8 @@
                         "article-1 article-2"
                         "article-1 article-2";
     column-gap: 2rem;
+    margin-inline-start: 3.5em;
+    margin-inline-end: 3.5rem;
   }
 
   #section_trending header {

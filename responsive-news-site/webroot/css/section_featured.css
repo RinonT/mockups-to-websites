@@ -22,3 +22,10 @@
 #section_featured footer {
   display: none;
 }
+
+@media (min-width: 768px) {
+  #section_featured article {
+    padding-inline-start: 3.5rem;
+    padding-inline-end: 3.5rem;
+  }
+}
