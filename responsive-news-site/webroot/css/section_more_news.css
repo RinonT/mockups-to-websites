@@ -31,6 +31,7 @@
   #section_more_news > header {
     margin-inline-end: 3.5rem;
   }
+
   #section_more_news > header,
   #section_more_news article:nth-of-type(1) {
     margin-inline-start: 3.5rem;
@@ -42,7 +43,6 @@
 
  #section_more_news  {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
     grid-template-areas: "header header"
                         "article-1 article-2";
     column-gap: 2rem;
@@ -60,3 +60,19 @@
     grid-area: article-2;
   }
 }
+
+@media (min-width: 1440px) {
+  #section_more_news {
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  #section_more_news article {
+    margin-block-start: 0;
+  }
+  
+  #section_more_news article  ~ article {
+    margin-inline-start: 3.5rem;
+  }
+ }
