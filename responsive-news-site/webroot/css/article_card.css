@@ -44,3 +44,13 @@
 .article_card .publication_details time {
   background-image: url(../images/icons/icon_clock_white.svg);
 }
+
+@media (min-width: 1440px) {
+  .article_card {
+    max-width: 760px;
+    height: 430px;
+    margin-inline-end: 2.5rem;
+  }
+
+}
+

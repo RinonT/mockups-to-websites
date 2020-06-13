@@ -10,10 +10,6 @@
   line-height: 1rem;
 }
 
-.form_subscribe .form_row {
-
-}
-
 .form_subscribe input {
   padding: 0.5rem 2rem 0.5rem 0.5rem;
   display: block;
@@ -51,3 +47,4 @@
   margin-block-end: 0;
   font-size: 0.75rem;
 }
+

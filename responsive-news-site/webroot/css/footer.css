@@ -102,4 +102,44 @@ body > footer a {
     margin-inline-start: 3.5rem;
 
   }
+
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "h2 ul form icons";
+
+  }
+
+  footer h2 {
+    padding-inline-start: 1rem;
+    grid-area: h2;
+    margin-inline-start: 3.5rem;
+  }
+
+  footer .links_site {
+    grid-area: ul;
+    padding: 0;
+  }
+
+  a[href="/about"] {
+    margin-block-start: 0.5rem;
+  }
+  footer .links_social {
+    margin-block-end: auto;
+    margin-inline-start: 5rem;
+    grid-area: icons;
+
+  }
+   footer .links_social a{
+   vertical-align: top;
+  }
+
+  footer .form_subscribe {
+    grid-area: form;
+
+  }
+
 }
