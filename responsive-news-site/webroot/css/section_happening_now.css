@@ -26,7 +26,8 @@
      "article-3 article-4";
     column-gap: 3rem;
     margin-inline-start: 3.5rem;
-    margin-inline-end: 3.5rem;
+    margin-inline-end: 0;
+    padding-inline-end: 0;
    }
 
   #section_happening_now header {

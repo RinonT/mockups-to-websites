@@ -63,15 +63,13 @@
 
 @media (min-width: 1440px) {
   #section_more_news {
-    max-width: 600px;
-    max-height: 600px;
     display: flex;
     flex-direction: column;
   }
   #section_more_news article {
     margin-block-start: 0;
   }
-  
+
   #section_more_news article  ~ article {
     margin-inline-start: 3.5rem;
   }
